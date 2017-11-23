@@ -1,0 +1,27 @@
+{
+  "name": "fakehappy",
+  "version": "1.0.0",
+  "description": "Fake happy smile generator with webcam",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpsBetty/fakehappy.git"
+  },
+  "keywords": [
+    "fakehappy",
+    "tracking"
+  ],
+  "author": "Bettina Steger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lpsBetty/fakehappy/issues"
+  },
+  "homepage": "https://github.com/lpsBetty/fakehappy#readme",
+  "dependencies": {
+    "dat.gui": "^0.6.1",
+    "tracking": "^1.1.3"
+  }
+}
