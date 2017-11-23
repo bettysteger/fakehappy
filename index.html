@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>tracking.js - face with camera</title>
+  <title>Fake happy - smiling face with camera</title>
   <link rel="stylesheet" href="./style.css">
 
   <script src="./vendor/tracking-min.js"></script>
@@ -19,7 +19,7 @@
 </head>
 <body>
   <div class="demo-title">
-    <p><a href="http://trackingjs.com" target="_parent">tracking.js</a> － get user's webcam and detect faces</p>
+    <p>Oh please, I bet everybody here is <a href="https://www.youtube.com/watch?v=w8vsuOXZBXc" target="_blank">fake happy</a> too</p>
   </div>
 
   <div class="demo-frame">
@@ -30,6 +30,12 @@
   </div>
 
   <script>
+    if(location.host === 'bettysteger.com') {
+      // webcam usage needs HTTPS
+      location.href = 'https://fakehappy.netlify.com/';
+      return;
+    }
+
     window.onload = function() {
       var video = document.getElementById('video');
       var canvas = document.getElementById('canvas');
