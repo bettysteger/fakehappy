@@ -17,9 +17,9 @@
   </style>
 </head>
 <body>
-  <div class="demo-title">
+  <header>
     <p>Oh please, I bet everybody here is <a href="https://www.youtube.com/watch?v=w8vsuOXZBXc" target="_blank">fake happy</a> too</p>
-  </div>
+  </header>
 
   <div class="demo-frame">
     <div class="demo-container">
@@ -38,6 +38,8 @@
       var video = document.getElementById('video');
       var canvas = document.getElementById('canvas');
       var context = canvas.getContext('2d');
+      var img = new Image();
+      img.src = './fakesmile.png';
 
       var tracker = new tracking.ObjectTracker('face');
       tracker.setInitialScale(4);
@@ -50,14 +52,19 @@
         context.clearRect(0, 0, canvas.width, canvas.height);
 
         event.data.forEach(function(rect) {
-          context.strokeStyle = '#a64ceb';
-          context.strokeRect(rect.x, rect.y, rect.width, rect.height);
-          context.font = '11px Helvetica';
-          context.fillStyle = "#fff";
-          context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
-          context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
+
+          context.drawImage(img, rect.x, rect.y);
+
+          // context.strokeStyle = '#a64ceb';
+          // context.strokeRect(rect.x, rect.y, rect.width, rect.height);
+          // context.font = '11px Helvetica';
+          // context.fillStyle = "#fff";
+          // context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
+          // context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
         });
       });
+
+
     };
   </script>
 

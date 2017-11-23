@@ -4,7 +4,7 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.demo-title {
+header {
   position: absolute;
   width: 100%;
   background: #2e2f33;
@@ -12,13 +12,13 @@
   padding: .7em 0;
 }
 
-.demo-title a {
+header a {
   color: #fff;
   border-bottom: 1px dotted #a64ceb;
   text-decoration: none;
 }
 
-.demo-title p {
+header p {
   color: #fff;
   text-align: center;
   text-transform: lowercase;
