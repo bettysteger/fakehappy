@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/lpsBetty/fakehappy#readme",
   "dependencies": {
-    "dat.gui": "^0.6.1",
-    "tracking": "^1.1.3"
+    "dat.gui": "0.7.5",
+    "tracking": "1.1.3"
   }
 }
